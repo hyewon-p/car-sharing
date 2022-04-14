@@ -11,7 +11,7 @@ if(!isset($_SESSION['user_id'])){
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Notes</title>
+    <title>My Trips</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="styling.css" rel="stylesheet">
       <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -86,6 +86,21 @@ if(!isset($_SESSION['user_id'])){
         .time{
             margin-top: 10px;
         }
+        .trip{
+          border:1px solid grey;
+          padding: 10px;
+          border-radius: 10px;
+          margin: 10px auto;
+          background: linear-gradient(#ECE9E6, #FFFFFF);
+        }
+
+        .departure, .destination,.seatsAvailable{
+          font-size: 1.5em;
+
+        }
+        .price{
+          font-size: 2em;
+        }
 
       </style>
   </head>
@@ -97,7 +112,7 @@ if(!isset($_SESSION['user_id'])){
             
               <div class="navbar-header">
               
-                  <a class="navbar-brand">Online Notes</a>
+                  <a class="navbar-brand">Car Sharing</a>
                   <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
                       <span class="sr-only">Toggle navigation</span>
                       <span class="icon-bar"></span>
@@ -196,17 +211,17 @@ if(!isset($_SESSION['user_id'])){
                         <label>
                           <input type="checkbox" name="monday" id="monday" value="1"/>Monday</label>
                         <label>
-                          <input type="checkbox" name="tuesday" id="tuesday" value="2"/>Tuesday</label>
+                          <input type="checkbox" name="tuesday" id="tuesday" value="1"/>Tuesday</label>
                         <label>
-                          <input type="checkbox" name="wednesday" id="wednesday" value="3"/>Wednesday</label>
+                          <input type="checkbox" name="wednesday" id="wednesday" value="1"/>Wednesday</label>
                         <label>
-                          <input type="checkbox" name="thursday" id="thursday" value="4"/>Thursday</label>
+                          <input type="checkbox" name="thursday" id="thursday" value="1"/>Thursday</label>
                         <label>
-                          <input type="checkbox" name="friday" id="friday" value="5"/>Friday</label>
+                          <input type="checkbox" name="friday" id="friday" value="1"/>Friday</label>
                         <label>
-                          <input type="checkbox" name="saturday" id="saturday" value="6"/>Saturday</label>
+                          <input type="checkbox" name="saturday" id="saturday" value="1"/>Saturday</label>
                         <label>
-                          <input type="checkbox" name="sunday" id="sunday" value="7"/>Sunday</label>
+                          <input type="checkbox" name="sunday" id="sunday" value="1"/>Sunday</label>
                     </div>
                     <div class="form-group one-off">
                       <label for="date" class="sr-only">Date:</label>
@@ -278,17 +293,17 @@ if(!isset($_SESSION['user_id'])){
                         <label>
                           <input type="checkbox" name="monday2" id="monday2" value="1"/>Monday</label>
                         <label>
-                          <input type="checkbox" name="tuesday2" id="tuesday2" value="2"/>Tuesday</label>
+                          <input type="checkbox" name="tuesday2" id="tuesday2" value="1"/>Tuesday</label>
                         <label>
-                          <input type="checkbox" name="wednesday2" id="wednesday2" value="3"/>Wednesday</label>
+                          <input type="checkbox" name="wednesday2" id="wednesday2" value="1"/>Wednesday</label>
                         <label>
-                          <input type="checkbox" name="thursday2" id="thursday2" value="4"/>Thursday</label>
+                          <input type="checkbox" name="thursday2" id="thursday2" value="1"/>Thursday</label>
                         <label>
-                          <input type="checkbox" name="friday2" id="friday2" value="5"/>Friday</label>
+                          <input type="checkbox" name="friday2" id="friday2" value="1"/>Friday</label>
                         <label>
-                          <input type="checkbox" name="saturday2" id="saturday2" value="6"/>Saturday</label>
+                          <input type="checkbox" name="saturday2" id="saturday2" value="1"/>Saturday</label>
                         <label>
-                          <input type="checkbox" name="sunday2" id="sunday2" value="7"/>Sunday</label>
+                          <input type="checkbox" name="sunday2" id="sunday2" value="1"/>Sunday</label>
                     </div>
                     <div class="form-group one-off2">
                       <label for="date2" class="sr-only">Date:</label>
